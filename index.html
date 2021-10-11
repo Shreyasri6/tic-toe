@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>TicTacToe</title>
+</head>
+<style>
+    .container{
+    margin: 10vh auto;
+    width: 50vw;
+    border: 1px solid #adadad;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.row>div{
+    width: 20vw;
+    height: 20vh;
+    border: 1px solid #ccc;
+}
+.dblclicked{
+    background-color: green;
+}
+.clicked{
+    background-color: red;
+}
+
+h1{
+    text-align: center;
+}
+</style>
+<body>
+
+
+<h1>TIC TAC TOE WITH COLORS</h1>
+
+<h2>First player-> Green</h2>
+<h2>Second player-> Red</h2>
+<!-- <h1>Double click for second player</h1> -->
+    <h1 id="result"></h1>
+    <div class="container">
+        <div class="row">
+            <div id="btn1"></div>
+            <div id="btn2"></div>
+            <div id="btn3"></div>
+        </div>
+        <div class="row">
+            <div id="btn4"></div>
+            <div id="btn5"></div>
+            <div id="btn6"></div>
+        </div>
+        <div class="row">
+            <div id="btn7" ></div>
+            <div id="btn8" ></div>
+            <div id="btn9" ></div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
